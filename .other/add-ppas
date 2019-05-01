@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+sudo add-apt-repository --no-update --yes ppa:git-core/ppa
+sudo add-apt-repository --no-update --yes ppa:peterlevi/ppa
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo 'deb https://dl.yarnpkg.com/debian/ stable main' > /etc/apt/sources.list.d/yarn.list
+sudo apt update
