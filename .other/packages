@@ -8,6 +8,7 @@ fonts-hack
 gnome-keyring
 gnupg2
 kbdd
+lightdm
 lm-sensors
 lxappearance
 materia-gtk-theme
