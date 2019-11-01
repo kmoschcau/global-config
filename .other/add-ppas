@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-sudo add-apt-repository --no-update --yes ppa:fish-shell/release-3
-sudo add-apt-repository --no-update --yes ppa:git-core/ppa
-sudo add-apt-repository --no-update --yes ppa:numix/ppa
-sudo add-apt-repository --no-update --yes ppa:variety/stable
-sudo apt update
