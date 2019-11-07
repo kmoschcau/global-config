@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+localectl set-x11-keymap us,us pc105 euro,intl grp:win_space_toggle
