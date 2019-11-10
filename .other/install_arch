@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+cat arch-packages | xargs sudo pacman -S --needed --noconfirm
