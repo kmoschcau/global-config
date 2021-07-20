@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+java -jar /opt/google-java-format/google-java-format-1.10.0-all-deps.jar "$@"
