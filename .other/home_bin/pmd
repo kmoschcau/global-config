@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-/opt/pmd/pmd-bin-6.18.0/bin/run.sh pmd "$@"
+/opt/pmd/pmd-bin-6.37.0/bin/run.sh pmd "$@"
