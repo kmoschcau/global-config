@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java -jar /opt/checkstyle/checkstyle-8.45.1-all.jar "$@"
+java -jar /opt/checkstyle/checkstyle-9.3-all.jar "$@"
