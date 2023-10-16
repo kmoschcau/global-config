@@ -1,0 +1,30 @@
+#!/usr/bin/env fish
+set filename $argv[1]
+
+if set --query $argv[2]
+    set line $argv[2]
+else
+    set line 1
+end
+
+if set --query $argv[3]
+    set column $argv[3]
+else
+    set column 1
+end
+
+set command "<C-\\><C-N>:new $filename<CR>:call cursor($line, $column)<CR>"
+
+set user_id (id -u)
+set run_dir "/run/user/$user_id/"
+set sockets (find $run_dir -maxdepth 1 -name 'nvim.*' -type s)
+
+for socket in $sockets
+    set pid (basename $socket | cut --delimiter . --fields 2)
+    set cwd (pwdx $pid | cut --delimiter ' ' --fields 2)
+
+    if test $PWD = $cwd
+        nvim --server $socket --remote-send $command
+        exit
+    end
+end
